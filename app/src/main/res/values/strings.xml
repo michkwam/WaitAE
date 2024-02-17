@@ -5,4 +5,7 @@
     <string name="password">password</string>
     <string name="Login" />
     <string name="SignUp" />
+    <string name="app_logo">App logo</string>
+    <string name="welcome_to_smart_a_e"><![CDATA[Welcome to Smart A&E]]></string>
+    <string name="log_out">Log Out</string>
 </resources>
