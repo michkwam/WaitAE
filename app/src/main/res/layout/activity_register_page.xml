@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".RegisterPage">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:background="@drawable/customazed"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:id="@+id/signUpTitle"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:autofillHints="Name"
+                android:background="@drawable/customazed"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="full name"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:textColor="@color/Black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/regUsername"
+                android:background="@drawable/customazed"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:paddingLeft="5dp"
+                android:hint="@string/username"
+                android:textColor="@color/Black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="30dp"
+                android:autofillHints="username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/email"
+                android:background="@drawable/customazed"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:paddingLeft="5dp"
+                android:hint="email"
+                android:textColor="@color/Black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="30dp"
+                android:autofillHints="emailAddress"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/regPassword"
+                android:background="@drawable/customazed"
+                android:drawablePadding="8dp"
+                android:hint="@string/password"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:paddingLeft="5dp"
+                android:textColor="@color/Black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="30dp"
+                android:autofillHints="password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/MediumAquamarine"
+                android:text="Sign Up"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Already registered? Login Now"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:id="@+id/loginLink"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

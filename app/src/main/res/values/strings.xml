@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WaitAE</string>
+    <string name="login">Login</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="Login" />
+    <string name="SignUp" />
+</resources>
