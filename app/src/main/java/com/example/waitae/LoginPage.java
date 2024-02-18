@@ -106,7 +106,7 @@ public class LoginPage extends AppCompatActivity {
 
         DatabaseReference patientRef = FirebaseDatabase.getInstance().getReference("patients");
 
-        Query checkPatientDB = patientRef.orderByChild("patient").equalTo(username);
+        Query checkPatientDB = patientRef.orderByChild("patients").equalTo(username);
 
         checkPatientDB.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

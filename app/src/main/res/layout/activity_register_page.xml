@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/smartae_signup_bg"
 
     tools:context=".RegisterPage">
 
