@@ -58,7 +58,7 @@
                 android:id="@+id/regUsername"
                 android:background="@drawable/customazed"
                 android:drawablePadding="8dp"
-                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawableLeft="@drawable/baseline_perm_identity_24"
                 android:paddingLeft="5dp"
                 android:hint="@string/username"
                 android:textColor="@color/Black"
@@ -106,18 +106,22 @@
                 android:text="Sign Up"
                 android:textSize="18sp" />
 
+            <TextView
+                android:id="@+id/loginLink"
+                android:layout_width="304dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="30dp"
+                android:text="Already registered? Login Now"
+                android:textAlignment="center"
+                android:textColor="@color/SteelBlue"
+                android:textSize="15sp" />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="30dp"
-        android:text="Already registered? Login Now"
-        android:textSize="15sp"
-        android:textAlignment="center"
-        android:id="@+id/loginLink"
-        android:layout_marginBottom="20dp"/>
+
 
 </LinearLayout>

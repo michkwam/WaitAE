@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     id("com.google.gms.google-services")
+    //id("com.google.gms.google-services")
 }
 
 android {
@@ -35,10 +36,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.firebase.inappmessaging)
     implementation(libs.firebase.database)
-    implementation(libs.firebase.auth)
-    implementation(libs.firebase.analytics)
+//    implementation(libs.firebase.inappmessaging)
+//    implementation(libs.firebase.database)
+//    implementation(libs.firebase.auth)
+//    implementation(libs.firebase.analytics)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

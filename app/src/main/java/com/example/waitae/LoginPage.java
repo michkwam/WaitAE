@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -106,14 +107,14 @@ public class LoginPage extends AppCompatActivity {
 
         DatabaseReference patientRef = FirebaseDatabase.getInstance().getReference("patients");
 
-        Query checkPatientDB = patientRef.orderByChild("patients").equalTo(username);
+        Query checkPatientDB = patientRef.orderByChild("userName").equalTo(username);
 
         checkPatientDB.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()){
                     loginUsername.setError(null);
-                    String passwordFromDB = snapshot.child(username).child("password").getValue(String.class);
+                    String passwordFromDB = snapshot.child("userName").child("password").getValue(String.class);
 
                     if (!Objects.equals(passwordFromDB, password)) {
                        loginUsername.setError(null);
@@ -131,7 +132,7 @@ public class LoginPage extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
+                Toast.makeText(LoginPage.this, "Fail to login" + error, Toast.LENGTH_SHORT).show();
             }
         });
     }

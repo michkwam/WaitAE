@@ -66,9 +66,8 @@ public class RegisterPage extends AppCompatActivity {
 
                 PatientClass newPatient = new PatientClass(fullName, username, email, password);
                 ref.child(username).setValue(newPatient);
-
+                Intent mainPage = new Intent(RegisterPage.this, LoginPage.class);
                 Toast.makeText(RegisterPage.this, "Successfully Registered!", Toast.LENGTH_SHORT).show();
-                Intent mainPage = new Intent(RegisterPage.this, MainActivity.class);
                 startActivity(mainPage);
             }
         });
