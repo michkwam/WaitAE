@@ -2,7 +2,7 @@ package com.example.waitae;
 
 public class PatientClass {
 
-    String fullName, userName, email, password;
+    private String fullName, userName, email, password;
 
     public PatientClass() {
     }

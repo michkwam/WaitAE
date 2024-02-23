@@ -26,11 +26,11 @@ import java.util.Objects;
 
 public class LoginPage extends AppCompatActivity {
 
-    EditText loginUsername, loginPassword;
-    TextView registerLink;
-    Button loginButton;
-    FirebaseDatabase db;
-    DatabaseReference ref;
+    private EditText loginUsername, loginPassword;
+    private TextView registerLink;
+    private Button loginButton;
+    private FirebaseDatabase db;
+    private DatabaseReference ref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,13 +114,14 @@ public class LoginPage extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()){
                     loginUsername.setError(null);
-                    String passwordFromDB = snapshot.child("userName").child("password").getValue(String.class);
+                    String passwordFromDB = snapshot.child(username).child("password").getValue(String.class);
 
-                    if (!Objects.equals(passwordFromDB, password)) {
+                    if (Objects.equals(passwordFromDB, password)) {
                        loginUsername.setError(null);
                        Intent mainPage = new Intent(LoginPage.this, MainActivity.class);
                         startActivity(mainPage);
                     } else {
+                        Toast.makeText(LoginPage.this, "Password is:" + passwordFromDB, Toast.LENGTH_LONG).show();
                         loginPassword.setError("Invalid credentials");
                         loginPassword.requestFocus();
                     }
