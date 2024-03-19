@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "844585286723",
+    "firebase_url": "https://waitae-default-rtdb.firebaseio.com",
+    "project_id": "waitae",
+    "storage_bucket": "waitae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844585286723:android:63ae2b4bdd6163cf16e8f6",
+        "android_client_info": {
+          "package_name": "com.example.waitae"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa4gKlGT7hS_ONUquIg-vnZpTOD0ye6s4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
