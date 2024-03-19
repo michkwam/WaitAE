@@ -14,7 +14,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    private CardView profile;
     private CardView logOut;
+
+    PatientClass user;
 
 
     @Override
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         logOut = findViewById(R.id.logout_btn);
+        profile = findViewById(R.id.profile_view);
 
         logOut.setOnClickListener(new View.OnClickListener(){
 
@@ -36,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent loginPage = new Intent(MainActivity.this, LoginPage.class);
                 startActivity(loginPage);
+            }
+        });
+
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent profilePage = new Intent(MainActivity.this, Profile.class);
+
+                startActivity(profilePage);
             }
         });
     }
