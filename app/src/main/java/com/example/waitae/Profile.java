@@ -33,6 +33,7 @@ public class Profile extends AppCompatActivity {
 
         Bundle user = getIntent().getExtras();
 
+        assert user != null;
         fullName.setText(user.getString("userFullName"));
         userName.setText(user.getString("userName"));
         userEmail.setText(user.getString("userEmail"));

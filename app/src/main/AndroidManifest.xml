@@ -19,6 +19,7 @@
             android:exported="false" />
         <activity
             android:name=".AIChatBox"
+            android:windowSoftInputMode="adjustPan"
             android:exported="false" />
         <activity
             android:name=".WaitDisplay"

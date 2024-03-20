@@ -34,27 +34,60 @@
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher_foreground" />
+            <TextView
+                android:id="@+id/etich_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Full Name:"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
             <TextView
                 android:id="@+id/profile_fullName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Profile"
+                android:hint="fullName"
                 android:textAlignment="center"
-                android:textSize="22sp" />
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/etich_userName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Username:"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"/>
+
             <TextView
                 android:id="@+id/profile_userName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Profile"
+                android:hint="userName"
                 android:textAlignment="center"
-                android:textSize="22sp" />
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/etich_userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Email:"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/profile_userEmail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Profile"
+                android:hint="userEmail"
                 android:textAlignment="center"
-                android:textSize="22sp" />
+                android:textSize="30sp" />
 
         </LinearLayout>
 

@@ -121,13 +121,12 @@ public class LoginPage extends AppCompatActivity {
                     if (Objects.equals(passwordFromDB, password)) {
                        loginUsername.setError(null);
                        Intent mainPage = new Intent(LoginPage.this, MainActivity.class);
-                       Intent profilePage = new Intent(LoginPage.this, Profile.class);
 
                        Bundle user = new Bundle();
                        user.putString("userName", userNameFromDB);
                        user.putString("userFullName", userFullNameFromDB);
                        user.putString("userEmail", userEmailFromDB);
-                       profilePage.putExtras(user);
+                       mainPage.putExtras(user);
 
                        startActivity(mainPage);
                     } else {
